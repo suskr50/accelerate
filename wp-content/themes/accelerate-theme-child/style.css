@@ -61,3 +61,63 @@ body {
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+
+/* Case Studies Style */
+
+.main-cs-content {
+	width:90%;
+
+}
+.entry-header {
+	padding-left:150px;
+}
+.entry_summary  {
+	margin-left:100px;
+}
+.leftsize h5 {
+
+}
+
+
+
+.leftsize h3 {
+	font-size:16px;
+	font-weight: lighter;
+	color:#606060;
+	padding-bottom:10px;
+
+}
+
+.leftsize{
+	float:left;
+	width:300px;
+	margin-left:150px;
+	
+	font-size:18px;
+	}
+	
+
+
+
+#masthead nav ul li{
+	float:left;
+	margin: 0px 10px;
+
+}
+
+#masthead nav {
+	margin-top:-15px;
+}
+
+.case-studies-images {
+	float:right;
+	width:50%;
+}
+
+.cs-pictures {
+	padding-top:30px;
+	border-style:solid;
+}
+
+
