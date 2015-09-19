@@ -25,6 +25,34 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
+<section class="feature-posts">
+	<div class="site-content">
+		<div>
+		<h4 class="center"> Featured Work </h4>
+		<?php query_posts('posts_per_page=3&post_type=case_studies')?>
+
+		<ul class="featured-list ">
+
+			<?php while ( have_posts() ) : the_post(); 
+			$image1 = get_field("image1");
+			?>
+			<li class="individual-list">	
+				<figure>
+					<?php echo wp_get_attachment_image($image1,'medium'); ?>
+				</figure>
+
+
+				<a href="<?php the_permalink(); ?>" class="center "><?php the_title(); ?></a>
+			</li>
+		<?php endwhile; // end of the loop. ?>
+		
+
+		<?php wp_reset_query(); // resets the altered query back to the original ?>
+	</ul>
+</div>
+	</div>
+</section>
+
 <section class="recent-posts">
 	<div class="site-content">
 		<div class="blog-post">

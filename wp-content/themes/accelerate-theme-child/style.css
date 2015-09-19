@@ -12,6 +12,12 @@
  	
 @import url("../accelerate-theme/style.css");
 
+
+/* General */
+.center {
+	text-align:center;
+}
+
 body {
 	
 }
@@ -38,6 +44,7 @@ body {
 
 .blog-post {
 	width: 50%;
+
 }
 
 .blog-post h4 {
@@ -157,7 +164,6 @@ article.case-study {
 	
 
 
-
 #masthead nav ul li{
 	float:left;
 	margin: 0px 10px;
@@ -176,5 +182,35 @@ article.case-study {
 .cs-pictures {
 	padding-top:30px;
 	border-style:solid;
->>>>>>> sks-custom-posts
+
+}
+
+
+
+
+/* Featured Work */
+
+.recent-posts {
+	margin-top:100px;
+	
+}
+
+.feature-posts {
+	margin-bottom:350px;
+	
+}
+
+.featured-list {
+	list-style-type:none;
+	
+}
+
+.individual-list {
+	float:left;
+	margin: 0px 5px;
+	text-align:center;
+}
+
+.individual-list img {
+
 }
