@@ -66,15 +66,72 @@ body {
 /* Case Studies Style */
 
 .main-cs-content {
-	width:90%;
-
+	width:75%;
+	margin-left:210px;
 }
+
 .entry-header {
 	padding-left:150px;
+	float:left;
 }
 .entry_summary  {
 	margin-left:100px;
+
 }
+.case-study-left {
+	
+	float:left;
+	width:330px;
+	font-size:18px;
+
+}
+
+article.case-study {
+    clear: both;
+    margin: 40px 0 0;
+}
+
+.case-study-left h3 {
+	font-size:16px;
+	font-weight: lighter;
+	color:#606060;
+	padding-bottom:10px;
+
+}
+
+.case-study-left h5 {
+	 color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.33333;
+    margin: 0 0 12px;
+}
+
+.case-study-left h6 {
+	 font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 50px;
+}
+
+
+.case-study-right {
+	float:right;
+	width:706px;
+}
+
+.case-study-list img{
+	 border: 1px solid #dddddd;
+    margin-bottom: 100px;
+}
+
+.case-study-list{
+	list-style-type:none;
+}
+
+
+
+
 .leftsize h5 {
 
 }
@@ -119,8 +176,3 @@ body {
 	padding-top:30px;
 	border-style:solid;
 }
-
-
-    Status API Training Shop Blog About Pricing 
-
-    © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
