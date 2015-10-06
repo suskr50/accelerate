@@ -165,7 +165,6 @@ article.case-study {
 	float:left;
 	width:300px;
 	margin-left:150px;
-	
 	font-size:18px;
 	}
 	
@@ -173,12 +172,11 @@ article.case-study {
 
 #masthead nav ul li{
 	float:left;
-	margin: 0px 10px;
-
+	margin: 0px 20px ;
 }
 
 #masthead nav {
-	margin-top:-15px;
+	margin-top:-25px;
 }
 
 .case-studies-images {
@@ -220,4 +218,48 @@ article.case-study {
 
 .individual-list img {
 
+}
+
+
+/* Contact Page */
+
+
+#content {
+	font-family: 'Montserrat';
+	color: #606060;
+	margin-left: 75px;
+	width:80%;
+	
+}
+
+#content p {
+	font-family: 'Montserrat';
+	color: #606060;
+}
+
+#ninja_forms_form_1_cont {
+	font-family: 'Montserrat';
+	font-size:14px;
+	color: #606060;
+	}
+
+
+#ninja_forms_field_1_label, #ninja_forms_field_2_label,#ninja_forms_field_3_label,#ninja_forms_field_4_label, #ninja_forms_field_5_label{
+	font-weight: normal;
+}
+
+#ninja_forms_field_1_div_wrap {
+	float:left;
+	width:49%
+}
+#ninja_forms_field_2_div_wrap {
+	float:right;
+	width:49%
+}
+
+#ninja_forms_field_5 {
+	 background: none repeat scroll 0 0 #45ac9d;
+	 float:right;
+	 color:white;
+	 padding:10px 100px 10px 100px;
 }

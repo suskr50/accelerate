@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<section class="blog-page">
+	<section class="feature-work">
 	<div class="container ">
 		<div class="main-acs-content  ">
 
