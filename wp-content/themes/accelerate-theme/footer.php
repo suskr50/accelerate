@@ -20,11 +20,16 @@
 				<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
 				
-			<nav class="social-media-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-			</nav>
+			<div id="social">
+				<ul>
+					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/linkedin-icon.png"?>"></li>
+					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/facebook-icon.png"?>"></li>
+					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/twitter-icon.png"?>"></li>
+					
+				</ul>
+			</div>	
 
-				
+
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->

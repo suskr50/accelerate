@@ -337,11 +337,12 @@ article.case-study {
 	margin-left: auto;
     margin-right: auto;
     text-align:center;
+
   	
 }
 
 #call-to-action p {
-	font-size: 25px;
+	 font-size: 25px;
 	 font-family: 'open sans', Arial, sans-serif;
 	 font-weight:600; /* Semi Bold */
 	 margin-right:50px;
@@ -354,5 +355,23 @@ article.case-study {
 	padding: 15px 75px 15px 75px;
 	color:white;
 
+ }
+
+
+ /* Footer */
+
+ .site-footer {
+	width:950px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top:80px;
+ }
+
+ 
+
+ #social ul li{
+ 	float:right;
+	margin: 0px 5px;
+	list-style-type:none;
  }
 
