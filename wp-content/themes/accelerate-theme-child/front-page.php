@@ -17,7 +17,7 @@ get_header(); ?>
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
+			<div class='homepage'>
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
