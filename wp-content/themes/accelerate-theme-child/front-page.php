@@ -53,6 +53,36 @@ get_header(); ?>
 	</div>
 </section>
 
+
+<section class="front-services center">
+	<?php query_posts('pagename=about'); ?>
+	<?php if (have_posts()) : ?>
+
+	<?php while (have_posts()) : the_post(); 
+		$picture_1 = get_field("picture_1");
+		$title_1 = get_field("title_1");
+		$picture_2 = get_field("picture_2");
+		$title_2 = get_field("title_2");
+		$picture_3 = get_field("picture_3");
+		$title_3 = get_field("title_3");
+		$picture_4 = get_field("picture_4");
+		$title_4 = get_field("title_4");
+	?>
+
+	<h3> Our Services </h3>
+	<ul class="front-service-list">
+		<li> <img src="<?php echo $picture_1; ?>" ><h4><?php echo $title_1; ?></h4> </li>
+		<li> <img src="<?php echo $picture_2; ?>" ><h4><?php echo $title_2; ?></h4> </li>
+		<li> <img src="<?php echo $picture_3; ?>" ><h4><?php echo $title_3; ?></h4> </li>
+		<li> <img src="<?php echo $picture_4; ?>" ><h4><?php echo $title_4; ?></h4> </li>
+	</ul>
+
+
+	<?php endwhile; ?>
+	<?php endif; ?>
+
+</section>
+
 <section class="recent-posts">
 	<div class="site-content">
 		<div class="blog-post">

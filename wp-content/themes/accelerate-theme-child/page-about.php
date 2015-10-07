@@ -31,11 +31,11 @@ get_header(); ?>
 		$picture_4 = get_field("picture_4");
 		$title_4 = get_field("title_4");
 		?>
-			<div class="about-top">
-				<?php the_content(); ?>
-			</div>
-		<?php endwhile; // end of the loop. ?>
-	</div><!-- .container -->
+		<div class="about-top">
+			<?php the_content(); ?>
+		</div>
+	<?php endwhile; // end of the loop. ?>
+</div><!-- .container -->
 </section><!-- .home-page -->
 
 <section class="about-services">
@@ -47,7 +47,7 @@ get_header(); ?>
 	</div>
 </section>
 
-	
+
 
 <section class="about-content">
 	<div >
@@ -82,8 +82,6 @@ get_header(); ?>
 <section id="call-to-action">	
 	<p > Interested in working with us? &nbsp&nbsp&nbsp&nbsp&nbsp  <span > <a  href="<?php home_url().'/contact-us'; ?>">Contact Us</a> </p>
 </section>
-
-</div>
 
 
 <?php get_footer(); ?>

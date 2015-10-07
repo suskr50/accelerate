@@ -25,10 +25,30 @@ body {
 /* Homepage Styles */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    height: 440px;
+    height: 500px;
     margin: 0 0 80px;
-    padding: 100px 0;
+    padding: 50px 0;
 }
+
+
+.homepage-hero {
+	
+	margin-left: auto;
+   	margin-right: auto;
+   	padding-top:50px;
+   	width:875px;
+   	color:white;
+ }
+
+ .homepage-hero h1 {
+	
+   	color:white;
+   	font-size: 52px;
+	font-family: 'Montserrat';
+	font-weight:bold;
+
+ }
+
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
@@ -374,4 +394,38 @@ article.case-study {
 	margin: 0px 5px;
 	list-style-type:none;
  }
+
+ /* Front Page Services Section */
+
+ .front-services {
+ 	clear: both;
+	width:960px;
+	margin-left: auto;
+    margin-right: auto;
+      }
+
+.front-services ul li{
+ 	float:left;
+	margin: 0px 15px;
+	list-style-type:none;
+ }
+
+ .front-services img {
+ 	height:200px;
+ 	width:200px;
+ }
+
+ .front-services h3 {
+ 	font-family: 'Montserrat';
+	font-size:18px;
+	font-weight:bold;
+ }
+
+  .front-services h4 {
+ 	font-size:16.5px;
+	font-weight:bold;
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:600; /* Semi Bold */
+ }
+
 
