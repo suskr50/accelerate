@@ -59,28 +59,63 @@ body {
     
 }
 
+/* Front Page Recent Post */
+
+.fp-recent-post {
+	background-color:orange;
+	clear: both;
+	width:960px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+
+}
+
 /* Homepage Blog Style */
 
-.blog-post {
-	width: 50%;
+.fpblog-post {
+	width:472px;
+	overflow:hidden;
+	float:left;
 
 }
 
-.blog-post h4 {
-	font-size: 16px;
+.fp-recent-post p {
+	font-size:17px;
+	font-family: 'open sans', Arial, sans-serif;
+	color: rgb(59, 59, 59); 
+	line-height: 1.727;
+	}
+
+.fp-recent-post h5 {
+	font-size: 27px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
-	text-transform: uppercase;
+	
+	 color: rgb(59, 59, 59);
+	 font-weight:bold;
+
 }
 
-.blog-post h2 {
+.fp-recent-post h4 {
+	font-size: 17px;
+	font-family: 'Montserrat';
+	color: rgb(166, 166, 166);
+	font-weight:bold;
+}
+
+.moveover {
+	margin-left:46px;
+}
+
+.fp-recent-post h2 {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 	
 }
 
-.blog-post .read-more-link {
+.fp-recent-post .read-more-link {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	font-weight: bold;
@@ -89,6 +124,32 @@ body {
 
 }
 
+
+/* Twitter Post */
+
+.twitter-post, .widget-area{
+	width:472px;
+	float:right;
+}
+
+.tweets ul{
+	text-align:left;
+}
+.tweets li {
+	list-style-type:none;
+	font-size:17px;
+	font-family: 'open sans', Arial, sans-serif;
+	color: rgb(59, 59, 59); 
+	line-height: 1.727;
+	font-weight:normal;
+	}
+
+
+}
+
+PI_SimpleTwitterTweets {
+	padding-left:0px;
+}
 
 /* Case Studies Style */
 
@@ -104,10 +165,7 @@ body {
 
 }
 
-.entry-header {
-	padding-left:150px;
-	float:left;
-}
+
 .entry_summary  {
 	margin-left:100px;
 
@@ -465,7 +523,7 @@ article.case-study {
 	width:960px;
 	margin-left: auto;
     margin-right: auto;
-      }
+ }
 
 .front-services ul li{
  	float:left;
