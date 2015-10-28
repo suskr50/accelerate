@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html id="report-page" class=" js no-mobile desktop no-ie ff ff41 ofw-section expenses-section w-1269 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius no-cssreflections csstransforms csstransitions touch no-retina fontface domloaded" lang="en"><!--<![endif]--><head>
+    <script src="shared%20expense%202_files/b8b9d20623.js" type="text/javascript"></script><script src="shared%20expense%202_files/nr-768.js"></script><script src="shared%20expense%202_files/dc.js" async="" type="text/javascript"></script><script type="text/javascript">
+        window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:23,2:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,2:23,ee:"QJf3ax"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,2:23,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,2:23,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
+        ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"b8b9d20623",applicationID:"7405924",sa:1,agent:"js-agent.newrelic.com/nr-632.min.js"}
+    </script>
+    <title></title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <link rel="icon" href="https://ofw.ourfamilywizard.com/ofw/media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://ofw.ourfamilywizard.com/ofw/media/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="shared%20expense%202_files/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="shared%20expense%202_files/jquery-ui-1.css">
+    <link rel="stylesheet" href="shared%20expense%202_files/dailog.css" type="text/css">
+    <link media="screen" rel="stylesheet" href="shared%20expense%202_files/colorbox.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="shared%20expense%202_files/styleV2.css">
+
+    <script src="shared%20expense%202_files/head.js"></script>
+
+
+    
+
+
+
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQEDUlNUGwQEVFRbBQU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/ofw/css/IEV2.css?version=10"/>
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/ofw/css/IE9V2.css?version=10"/>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src=/ofw/js/html5.js?version=10"></script>
+    <![endif]-->
+
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" type="text/css" media="all" href="shared%20expense%202_files/ms.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" type="text/css" media="print" href="shared%20expense%202_files/printV2.css"><script src="shared%20expense%202_files/jquery-1.js" type="text/javascript"></script><script src="shared%20expense%202_files/jquery-ui-1.js" type="text/javascript"></script><script src="shared%20expense%202_files/lzw.js" type="text/javascript"></script><script src="shared%20expense%202_files/jquery_004.js" type="text/javascript"></script><script src="shared%20expense%202_files/Common.js" type="text/javascript"></script><script src="shared%20expense%202_files/jquery.js" type="text/javascript"></script><script src="shared%20expense%202_files/jquery_003.js" type="text/javascript"></script><script src="shared%20expense%202_files/jquery_002.js" type="text/javascript"></script><script src="shared%20expense%202_files/common.js" type="text/javascript"></script><script src="shared%20expense%202_files/date.js" type="text/javascript"></script><script src="shared%20expense%202_files/Placeholders.js" type="text/javascript"></script><script src="shared%20expense%202_files/common-validate.js" type="text/javascript"></script>
+
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+
+
+    
+    
+    
+        <body class="">
+    
+
+<div id="container">
+
+    
+        
+        
+        
+    
+    <div id="header">
+        <div id="sLogo"><a href="https://ofw.ourfamilywizard.com/">The OurFamilyWizard website</a></div>
+
+        <div id="headerControl">
+            <div id="welcomeUser" class="left">
+                Welcome Susan Schrum
+            </div>
+            <ul id="headerActions">
+                <li id="contl"><a id="contactLink" href="https://ofw.ourfamilywizard.com/ofw/home/contactus.form">Contact Us</a></li><li><a target="_blank" href="https://www.ourfamilywizard.com/ofw/index.cfm/resources/">Resources</a></li><li><a href="http://www.ourfamilywizard.com/ofw/index.cfm/help/" target="OFWhelp">Help</a></li>
+            </ul>
+        </div>
+
+
+        
+        <div id="responsiveMenu" class="clear">
+            <a href="#" title="toggle menu"><img src="shared%20expense%202_files/menuBars.png"></a>
+        </div>
+        
+        <div id="navPriWrap" class="clearfix">
+
+            <ul id="navPrimary" class="left clearfix">
+                <li id="navHome"><a href="https://ofw.ourfamilywizard.com/ofw/home.form">Home</a></li><li id="navCalendar">
+                <a href="https://ofw.ourfamilywizard.com/ofw/calendar.form">Calendar</a>
+            </li><li id="navMessages">
+                <a href="https://ofw.ourfamilywizard.com/ofw/messageboard.form">Message Board</a>
+            </li><li id="navInfobank" class="current">
+                <a href="https://ofw.ourfamilywizard.com/ofw/infobank.form">Info Bank</a>
+            </li><li id="navExpenses">
+                <a href="https://ofw.ourfamilywizard.com/ofw/expenses.form">Expense Log</a>
+            </li><li id="navMyaccount">
+                <a href="https://ofw.ourfamilywizard.com/ofw/myaccount.form">My Account</a>
+            </li><li class="last" id="navSignout">
+                <a href="https://ofw.ourfamilywizard.com/ofw/logout.form?j=true">Sign Out</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="content">
+        
+        
+
+<form id="printForm" method="post" style="display:none" action="/ofw/calendar/print.form">
+    <input name="gen" id="gen" value="" type="hidden">
+    <input name="printTitle" id="printTitle" value="" type="hidden">
+</form>
+<div id="contentSH">
+    <div class="right" id="printHdr">
+        <h5>The OurFamilyWizard® website</h5>
+
+        <p>1302 2nd St NE Suite 200</p>
+
+        <p>Minneapolis, MN 55413</p>
+        <a href="#">http://www.OurFamilyWizard.com</a>
+        <a href="#">Info@OurFamilyWizard.com</a>
+    </div>
+    <h3 id="sectionH">Statistical Report</h3>
+    <div id="printListHdr">
+
+    </div>
+    <div class="sToolBar">
+        
+            <div id="printBtn" title="Print" class="button toolList right">
+                <p>Print</p>
+                <div id="cPrint" class="bImgWrap"></div>
+            </div>
+        
+
+    </div>
+</div>
+
+<div id="main">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="sideBar">
+
+
+    <ul id="sideNav">
+        
+        <li>
+            <a href="https://ofw.ourfamilywizard.com/ofw/expenses.form" title="Expense Register">Expense Register</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://ofw.ourfamilywizard.com/ofw/expenses/payments.form" title="Payments">Payments</a>
+        </li>
+
+            
+                <li>
+                    <a href="https://ofw.ourfamilywizard.com/ofw/expenses/recurringpayments.form" title="Scheduled Payments">Scheduled Payments</a>
+                </li>
+            
+        
+
+        
+        <li class="active">
+            <a href="https://ofw.ourfamilywizard.com/ofw/expenses/report.form" title="Reporting">Reporting</a>
+        </li>
+        
+
+        
+            
+                <li>
+                    <a href="https://ofw.ourfamilywizard.com/ofw/expenses/ofwpay.form" title="OFWpay™ Accounts">OFWpay™ Accounts</a>
+                </li>
+            
+        
+
+        
+        <li>
+            <a href="https://ofw.ourfamilywizard.com/ofw/expenses/categories.form" title="Categories">Categories</a>
+        </li>
+        
+    </ul>
+
+
+    
+
+    
+    <div id="legend">
+        <h4>Legend</h4>
+        <hr>
+
+        <ul>
+
+            <li><img alt="Edit" src="shared%20expense%202_files/editExpnoback25.png">Edit</li>
+            <li><img alt="Delete" src="shared%20expense%202_files/deleteExpnoback25.png">Delete</li>
+            <li><img alt="Make Payment" src="shared%20expense%202_files/payExpenseB.png">Make Payment</li>
+            <li><img alt="Reimburse" src="shared%20expense%202_files/reimburseExpnoback25.png">Reimburse</li>
+            <li><img alt="Approve" src="shared%20expense%202_files/approveExpnoback25b.png">Approve</li>
+            <li><img alt="Refuse" src="shared%20expense%202_files/rejectExpnoback25.png">Refuse</li>
+
+
+        </ul>
+
+        <ul style="display:none;">
+            
+        </ul>
+
+    </div>
+    
+
+    <div id="lastViewed" class="lNavOpen">
+        <h6>Last viewed</h6>
+        <hr>
+        
+            <ul>
+                
+                <li class="lvUsr">
+                    <div class="lvColor" style="background-color: #994499;"></div>
+                    <div class="lvName">
+                        <p>Susan Schrum</p>
+
+                        
+                        <p>
+                          10/26/2015 10:29 AM
+                        </p>
+                    </div>
+
+                </li>
+
+                
+                <li class="lvUsr">
+                    <div class="lvColor" style="background-color: #627487;"></div>
+                    <div class="lvName">
+                        <p>Sid Schrum</p>
+
+                        
+                        <p>
+                          Never
+                        </p>
+                    </div>
+
+                </li>
+
+                
+            </ul>
+        
+    </div>
+
+    <div id="currTime">
+        <h6>Current Time/Zone</h6>
+        <hr>
+        <p>
+            10/26/2015 10:30 AM
+        </p>
+
+        <p>
+            America/New_York
+        </p>
+    </div>
+
+
+</div>
+<input name="refresh_key" id="refresh_key" value="true" type="hidden">
+
+    <div id="spacer"></div>
+    <div id="mContent">
+            <div class="expRep">
+                <h3>Statistical Report</h3>
+                <div id="expRepFilterT">
+                    <h5>
+                        Susan Schrum generated this report on
+                        10/26/2015 at
+                        10:30 AM.
+                        All times are listed in America/New_York timezone.
+                    </h5>
+                    <ol>
+                        
+                        <li class="dateSpan"> <span>Date:</span> <span>10/26/2015</span>-<span>10/26/2015</span></li>
+
+
+                            
+                            
+                                
+                                    <li><span>Expense Categories:</span> All Categories</li>
+                                
+                                
+                            
+
+
+                        
+                        
+                            
+                            
+                                <li><span>Expense For:</span>
+
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                    Anna Schrum
+                                                
+                                            
+                                        
+                                    
+                                        
+                                            
+                                                
+                                                
+                                            
+                                        
+                                    
+                                        
+                                            
+                                                
+                                                
+                                            
+                                        
+                                    
+                                        
+                                            
+                                                
+                                                
+                                            
+                                        
+                                    
+                                </li>
+
+                            
+                        
+
+
+
+
+
+
+
+
+
+                    </ol>
+                </div>
+
+
+
+            <div class="ele">
+        <table class="sTable dataTable">
+            <thead>
+                <tr class="dblHeader"><th colspan="7">Total Expenses</th> </tr>
+                <tr>
+                    <th class="th115">Creator</th>
+                    <th class="th115">Expense Amount</th>
+                    <th>(Owes)/Is&nbsp;Owed</th>
+                    <th>(Paid)/Received</th>
+                    <th class="th115">Refused Requests</th>
+                    <th class="th115">Open Requests</th>
+                    <th class="th115">Approved Requests</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            
+                
+
+                <tr class="even">
+                    <td>Susan Schrum</td>
+                    <td>$180.00</td>
+                    <td>$90.00</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                    <td>$90.00</td>
+                    <td>$0.00</td>
+                </tr>
+            
+              </tbody>
+        </table>
+                
+                    <div class="eleTot">Sid Schrum owes Susan Schrum $90.00</div>
+                
+
+                
+        </div>
+
+        
+            
+
+            <div class="ele">
+            <table class="sTable dataTable">
+                <thead>
+                  <tr class="dblHeader">  <th colspan="7">Ballet</th>  </tr>
+                  <tr>
+                      <th class="th115">Creator</th>
+                      <th class="th115">Expense Amount</th>
+                      <th>(Owes)/Is&nbsp;Owed</th>
+                      <th>(Paid)/Received</th>
+                      <th class="th115">Refused Requests</th>
+                      <th class="th115">Open Requests</th>
+                      <th class="th115">Approved Requests</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                
+                    <tr class="even">
+                        <td>Susan Schrum</td>
+                        <td>$180.00</td>
+                        <td>$90.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$90.00</td>
+                        <td>$0.00</td>
+                    </tr>
+                
+                 </tbody>
+            </table>
+                
+                <div class="eleTot">Sid Schrum owes Susan Schrum $90.00</div>
+                
+               </div>
+        
+
+    </div>
+</div>
+    </div>
+<div style="display: none; position: absolute; left: 50%; margin-left: 0px;  z-index: 9999;" id="imProgBarCntnr">
+    <div class="imBarBack">
+        <div class="imProgBar"><img src="shared%20expense%202_files/4.gif" alt=""></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b8b9d20623","agent":"js-agent.newrelic.com\/nr-768.min.js","beacon":"bam.nr-data.net","applicationTime":3177,"applicationID":"7405924","transactionName":"ZwRQbRdRVhBRW0JdV15OYUkXWVYEc1dYQEpfDV5cFx9dG0BdWEddQ05TSQwfXRtAXVhHXUNBGn4gZBE=","queueTime":0}</script>
+
+    </div>
+
+
+    <div id="footer">
+        <p id="fReport">
+            This OurFamilyWizard report was generated by Susan Schrum
+            on 10/26/2015 10:30 AM America/New_York
+        </p>
+
+        <p id="fLinks">
+            <a href="http://www.ourfamilywizard.com/ofw/index.cfm/terms-conditions/" target="_blank">Terms and Conditions</a> | <a href="http://www.ourfamilywizard.com/ofw/index.cfm/help/" target="_blank">Help</a> | <a href="http://www.ourfamilywizard.com/ofw/index.cfm/about-us/" target="_blank">Company</a> |
+            <a href="http://www.ourfamilywizard.com/ofw/index.cfm/about-us/contact/" target="_blank">Contact</a>
+        </p>
+        
+        <p><spring:message code="global.copyright"> © 2000 - <span id="copyYr">2015</span> OurFamilyWizard.com<sup>®</sup> <spring:message code="global.patent_pending"></spring:message></spring:message></p>
+
+
+    </div>
+
+
+    
+        
+        
+
+    
+
+
+</div>
+
+
+
+<script type="text/javascript" id="jsLoad">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2172689-2']);
+    _gaq.push(['_setDomainName', '.ourfamilywizard.com']);
+    _gaq.push(['_trackPageview']);
+
+    var mobile = false;
+    var mobileOrTablet = false;
+    var tbl;
+
+    var ofwVers = "version=10";
+    var currentTime = "10/26/2015 10:30 AM";
+    var timeZone = "America/New_York";
+    
+    
+    
+    var userName = 'Susan Schrum';
+    
+    
+    var type = 'page';
+
+    
+
+    try {
+        head.js({"jquery": "/ofw/js/jquery/jquery-1.8.3.min.js?" + ofwVers},
+                {"jquery-ui-custom": "/ofw/js/jquery/jquery-ui-1.9.2.custom.min.js?" + ofwVers},
+                {"lzw": "/ofw/js/lzw.js?" + ofwVers},
+                {"jquery.ifrmdailog": "/ofw/src/Plugins/jquery.ifrmdailog.js?" + ofwVers},
+                {"Common": "/ofw/src/Plugins/Common.js?" + ofwVers},
+                {"colorbox": "/ofw/js/jquery.colorbox.js?" + ofwVers},
+                {"idletimeout": "/ofw/js/jquery.idletimeout.js?" + ofwVers},
+                {"idletimer": "/ofw/js/jquery.idletimer.js?" + ofwVers},
+                {"common": "/ofw/js/common/common.js?" + ofwVers},
+                {"date": "/ofw/js/date.js?" + ofwVers},
+                {"placeholder": "/ofw/js/Placeholders.js?" + ofwVers},
+                {"common-validate": "/ofw/js/common/common-validate.js?" + ofwVers},
+                mainV2Ready);
+    } catch (e) {
+        //nothing
+    }
+
+    function mainV2Ready() {
+
+        
+
+
+        
+
+
+
+        $(document).ready(function() {
+
+            mobile = isMobile();
+            mobileOrTablet = isMobileOrTablet();
+            Placeholders.init();
+            var width = $(window).width();
+            function ReloadsPopForTablet() {
+                // Make ColorBox responsive
+                if(width >= 768 && width <= 959 ) {
+                    $.colorbox.settings.maxWidth = '95%';
+                    $.colorbox.settings.maxHeight = '95%';
+                }
+
+                // ColorBox resize function
+                var resizeTimer;
+                function resizeColorBox()
+                {
+                    width = $(window).width();
+                    if (resizeTimer) clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(function() {
+                        if ($('#cboxOverlay').is(':visible')) {
+                            if(width >= 768 && width <= 959 ) {
+                                $.colorbox.load(true);
+
+                            }
+                        }
+                    }, 300);
+                }
+
+                // Resize ColorBox when resizing window or changing mobile device orientation
+                jQuery(window).resize(resizeColorBox);
+                if(window.addEventListener)
+                    window.addEventListener("orientationchange",resizeColorBox,false);
+                else
+                    window.attachEvent("orientationchange",resizeColorBox);
+            }
+
+            if(!mobile) {ReloadsPopForTablet();}
+
+            function KeepSessionAlive() {
+                $.post("/ofw/keepalive.form", null, function () {
+                });
+            }
+
+            $('#familychoice').change(function() {
+                var $selected = $(this).find(":selected");
+                if (!$selected.is($('#selectFamily'))) {
+                    document.location = '/ofw/home/choose_family.form?family_id=' + $selected.val();
+                }
+            });
+
+            var seconds = 600;
+            setInterval(KeepSessionAlive, ( seconds * 1000));
+
+
+            $("#responsiveMenu").click(function (e) {
+                e.preventDefault();
+
+                $("#navPriWrap").slideToggle();
+
+            });
+
+
+            $('#copyYr').html(new Date().getFullYear());
+
+
+            // setup the dialog
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true,
+                width: 400,
+                height: 200,
+                closeOnEscape: false,
+                draggable: false,
+                resizable: false,
+                buttons: {
+                    'Yes, Keep Working': function () {
+                        $(this).dialog('close');
+                    },
+                    'No, Logoff': function () {
+                        // fire whatever the configured onTimeout callback is.
+                        // using .call(this) keeps the default behavior of "this" being the warning
+                        // element (the dialog in this case) inside the callback.
+                        $.idleTimeout.options.onTimeout.call(this);
+                    }
+                }
+            });
+
+            // cache a reference to the countdown element so we don't have to query the DOM for it on each ping.
+            var $countdown = $("#dialog-countdown");
+
+            // start the idle timer plugin
+            $.idleTimeout('#dialog', 'div.ui-dialog-buttonpane button:first', {
+                idleAfter: 1500,
+                pollingInterval: 600,
+                keepAliveURL: '/ofw/keepalive.form?java=true',
+                serverResponseEquals: 'OK',
+                onTimeout: function () {
+                    window.location = "/ofw/logout.form?j=true";
+                },
+                onIdle: function () {
+                    $(this).dialog("open");
+                },
+                onCountdown: function (counter) {
+                    $countdown.html(counter); // update the counter
+                }
+            });
+
+            
+
+            $('#contactLink').click(function (e) {
+                e.preventDefault();
+
+                var url = "/ofw/home/popup/contactus.form";
+                if (mobile) {
+                    window.open(url);
+                } else {
+                    $.colorbox({overlayClose: false, speed: 0, width: "500px", iframe: true, height: "475px", scrolling: false, opacity: .3, top: "5%",
+                        href: url,
+                        onComplete: function () {
+                        },
+                        onClosed: function () {
+                            document.location.reload();
+                        }
+                    });
+                }
+
+                return false;
+
+            });
+
+            $('#startdt').datepicker({showButtonPanel: true, changeMonth: true, changeYear: true, yearRange: "c-70:c+10",dateFormat: 'mm/dd/yy', defaultDate: null});
+            $('#enddt').datepicker({showButtonPanel: true, changeMonth: true, changeYear: true, yearRange: "c-70:c+10",dateFormat: 'mm/dd/yy', defaultDate: null});
+        });
+
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && $("#navPriWrap").is(':hidden')) {
+                $("#navPriWrap").removeAttr('style');
+            }
+        });
+
+        $('#exFamView').click(function() {
+            document.location = '/ofw/home/exit_family_viewing.form';
+        });
+
+    }
+
+
+</script>
+
+    <script type="text/javascript">
+        var mobile;
+        var tablet;
+
+
+        head.ready(function() {
+
+            $("#printBtn").click(function () {
+                try {
+
+                    beforePrint();
+                    type = 'print';
+                    var h = $("html").html();
+                    var title = "Payment Report";
+                title = title.replace(' ', '_');
+                    $("#printTitle").val(title);
+                    // var data = LZW.compress(h);
+                    $("#gen").val(h);
+                    $('#printForm').submit();
+                    $("#gen").val("");
+                } catch(e){
+                    alert('Error attempting to print, please try again.');
+                }
+            });
+
+            $('.sTable').each(function() {
+                $(this).find("tbody tr:odd").addClass("odd");
+                $(this).find("tbody tr:even").addClass("even");
+            });
+
+
+        });
+        //
+
+    </script>
+
+
+<script type="text/javascript">
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+
+        ga.src = ('https:' == document.location.protocol ? ' https://' : ' http://') + 'stats.g.doubleclick.net/dc.js';
+
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+
+
+    
+
+<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div aria-labelledby="ui-id-1" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-1">Your session is about to expire!</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="ui-dialog-content ui-widget-content" style="" id="dialog">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 50px 0;"></span>
+        You will be logged off in <span id="dialog-countdown" style="font-weight:bold"></span> seconds.
+    </p>
+
+    <p>
+        Do you want to continue your session?
+    </p>
+</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Yes, Keep Working</span></button><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">No, Logoff</span></button></div></div></div></body></html>

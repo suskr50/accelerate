@@ -1,0 +1,1142 @@
+
+@media
+only screen and (max-width: 1000px) {
+    #header {
+        background-clip: padding-box;
+        border-bottom: 5px solid rgba(70, 144, 215, 0.3);
+        color: #2970C2;
+        font-size: 14px;
+        height: 138px;
+        margin-top: 10px;
+    }
+
+    .signUp #header {
+        height:93px;
+    }
+
+    body.error #header {
+        height: 93px;
+    }
+
+    #notifyCard {
+        width: 50%;
+    }
+
+
+}
+
+
+@media
+only screen and (max-width: 880px) {
+
+    #notifyCard, .cardRow .card {
+        width: 98%;
+    }
+
+    #appCard {
+    margin: 20px 60px 0;
+        width: 60%;
+    }
+
+
+
+}
+
+
+
+     /*ipad  classic*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+
+    #header {
+        border-bottom:0 none;
+        height:auto;
+        margin-top:0;
+    }
+
+    body.pro #header {
+        height: 123px;
+    }
+
+    #placeOrder, #createPro {
+        clear: both;
+
+    }
+
+
+    #headerControl {
+        height:auto;
+    }
+
+
+
+    #navPriWrap {
+        height: auto;
+        margin-top:0;
+        clear: both;
+    }
+
+    #navPriWrap ul#navPrimary {
+        width: 100%;
+        display: table;
+        height: auto;
+    }
+
+    #navPriWrap,  #navPrimary li {
+        background: #4072B6;
+    }
+
+
+    #navPrimary li {
+        width: auto;
+        height: 43px;
+        line-height: 40px;
+        text-align: center;
+        border-right: 2px solid #4690D7;
+        padding: 0;
+        display: table-cell;
+    }
+
+
+
+    #navPrimary a {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.2em;
+        height: auto;
+    }
+
+    .stdCardTbl {
+        width: 100%;
+    }
+
+
+
+    #sideBar {
+        float:none;
+        width: auto;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #cccccc;
+
+    }
+
+    #sideNav {
+        width: 100%;
+        height: auto;
+        display: table;
+        table-layout: fixed; /* optional */
+    }
+
+
+    #lastViewed li {
+        width: auto;
+        float: left;
+        position: relative;
+        display: inline;
+        padding-right: 5px;
+    }
+
+    #sideBar hr {
+        width:100%;
+        color: transparent;
+        margin: 1px auto;
+    }
+
+    #currTime p{
+        display: inline;
+    }
+
+    #legend, #lastViewed {
+        border-bottom: 1px solid #cccccc;
+
+    }
+
+    #lastViewed:before,
+    #lastViewed:after {
+        content: " ";
+        display: table;
+    }
+    #lastViewed:after {
+        clear: both;
+
+    }
+
+    #mContent {
+        padding:0;
+    }
+
+    .myAccount.login #mContent {
+        padding-left: 0;
+    }
+
+    .card.loginCard fieldset, .card.loginCard footer {
+        padding: 20px 10px 0;
+        width: 90%;
+    }
+
+    .card.loginCard footer {
+        padding-bottom:20px;
+    }
+
+    #appCard {
+        width: 78%;
+    }
+
+    .card.loginCard h3, .card.loginCard p, .loginHelpFunction,#passwordAssist p {
+        padding: 10px;
+        line-height: 1.0em;
+    }
+
+    .loginHelpFunction span {
+        display:block;
+        padding:15px 0;
+    }
+
+    #usernamePasswordLink {
+        padding-left:0;
+    }
+
+    #passwordAssist {
+        margin-top: 15px;
+    }
+
+    #spacer {
+        display:none;
+    }
+
+    #navPrimary li.current {
+        background: none repeat scroll 0 0 #6ea5dc;
+        margin-top: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #navPrimary li:first-child {
+        border-radius: 0;
+    }
+    #navPrimary li,#navPrimary li:last-child {
+        border-bottom: 1px solid #4690D7;
+    }
+
+    #navPrimary .current a, #navPrimary .current a:active, #navPrimary .current a:hover, #navPrimary .current a:focus {
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+
+    #navPrimary a:active, #navPrimary a:hover, #navPrimary a:focus {
+        color: #2e5777;
+
+    }
+
+    #sLogo a {
+        background-size: 100% auto;
+        height: 70px;
+        margin: 5px 5px 0 0;
+        width: 195px;
+    }
+
+    body {
+        margin:0;
+    }
+
+    #welcomeUser {
+        padding: 5px;
+        float:none;
+        text-align: right;
+    }
+
+    #headerActions {
+        padding: 0;
+        padding-top: 5px;
+        clear:none;
+        float:none;
+        text-align: right;
+    }
+
+    #header #headerActions li {
+        padding:5px;
+    }
+
+
+
+    #sideNav li {
+        float: none;
+        width: auto;
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 0;
+        display: table-cell;
+        text-indent: 0;
+    }
+
+    #sideNav a {
+        display: inline-block;
+        vertical-align: middle;
+        height: auto;
+        padding: 0 5px;
+    }
+
+
+
+    #sideNav li.active {
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+
+    #legend ul li, #filterWrap ol li{
+        display: inline;
+        line-height: 1.2em;
+    }
+
+    #creatorselect {
+        margin: 0;
+        position: relative;
+        top: -10px;
+    }
+
+    .srch {
+
+        width: 120px;
+    }
+
+    #ibabtbl_filter label {
+        width:95px;
+    }
+
+    .expense  #ibabtbl_filter label {
+        width:120px;
+    }
+
+    #ibabtbl_filter {
+        width:120px;
+    }
+
+    #contentSH {
+        min-height: 65px;
+        height: auto;
+        padding-bottom:6px;
+    }
+
+    #navPriWrap {
+        display: block;
+    }
+
+    #sideNav li {
+        line-height: 1.2em;
+        padding-top: 16px;
+    }
+
+    #subSel div {
+        width: 90%;
+    }
+
+    #mContent.steps {
+        padding: 0;
+        width: 90%;
+    }
+
+    #signupStepInfo li {
+
+        display: table-cell;
+        font-weight: 700;
+        padding: 5px 30px;
+        box-shadow: none ;
+        -webkit-box-shadow:none ;
+        -moz-box-shadow: none;
+        border-bottom: 0 none;
+        font-size: 1em;
+    }
+
+    #signupStepInfo li:first-child {
+        -moz-border-radius: 0; /* Firefox */
+        -webkit-border-radius: 0; /* Safari, Chrome */
+        border-radius: 0; /* CSS3 */
+    }
+
+    #signupStepInfo li:last-child {
+        border-left: 0 none;
+        -moz-border-radius: 0; /* Firefox */
+        -webkit-border-radius: 0; /* Safari, Chrome */
+        border-radius: 0; /* CSS3 */
+
+    }
+    #signupStepInfo li.active {
+        color: #0E4D88;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    #signupStepInfo {
+
+        margin: 0 auto;
+        padding: 0;
+        width: 98%;
+    }
+
+    .steps .card {
+        width: 92%;
+        margin: 0 auto 10px;
+    }
+
+
+    #mContent.steps {
+        padding: 0;
+        margin: 0;
+        margin-top:20px;
+        width: 100%;
+    }
+
+    #mContent.steps.fullWidth {
+        padding: 0;
+    }
+
+
+    .ifColumn select, .ifColumn input {max-width: 240px;}
+    .ifColumn #dob {max-width: 80px;}
+
+    #genpaymentinfodiv label {
+        text-align: left;
+    }
+
+    #genpaymentinfodiv {
+        padding-left: 10px;
+        width: 95%;
+        float:none;
+    }
+
+    #disclosurediv {
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*width: 100%;*/
+        /*min-width: 250px;*/
+        margin: 0;
+        padding: 0;
+        width: 98%;
+        min-width: 250px;
+        float: none;
+    }
+
+    #disclosurediv > div.left {
+        float:none;
+    }
+
+    #proyes {
+        line-height: 1.2em;
+    }
+
+    #errorLoad {
+        padding:20px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    #reCaptchaWrap {
+        float: left;
+        clear: both;
+    }
+
+
+
+}
+
+
+/*iphone 6+*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio : 3)
+{
+
+    #strengthText {
+        float: right;
+        line-height: 25px;
+        margin-left: 8px;
+
+    }
+
+}
+
+
+
+
+/*iphone 5*/
+
+@media only screen and (max-width : 480px) {
+
+    #editMyAccount3 .bPop .ifColumn li   {
+        clear: both;
+    }
+
+
+    .myAccount #profileInfo .ifColumn label {
+        line-height: 15px;
+        margin-bottom:5px;
+    }
+
+    #strengthText {
+        float: none;
+        line-height: 15px;
+        margin: 5px 0 0;
+        position: relative;
+
+    }
+
+
+    #navPrimary a {
+        vertical-align: baseline;
+        height: 100%;
+        line-height: 1.2em;
+        width: 100%;
+    }
+
+    .sToolBar #printBtn {
+        margin-left: 0;
+        margin-top: -40px;
+    }
+
+    #itemSearchWrap {
+        display: inline-block;
+        float: none;
+        margin-right: 60px;
+        margin-top: -15px;
+        margin-left: 20px;
+    }
+
+    #addNewClientBtn {
+        margin-left:20px;
+    }
+
+    .toolList {
+        clear:both;
+    }
+    .toolList .button{
+        display:inline-block;
+        margin:5px;
+    }
+
+
+
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: 45%;
+    }
+
+
+    #navPrimary li {
+        width: 100%;
+        /*position: relative;*/
+        display: block;
+        /*float: left;*/
+        text-align: left;
+    }
+
+    #navPrimary a {
+        text-indent: 25px;
+    }
+
+    /*
+    Label the data
+    */
+    #paymentHistoryTbl td:nth-of-type(1):before { content: "Transaction Number"; }
+    #paymentHistoryTbl td:nth-of-type(2):before { content: "Payment For"; }
+    #paymentHistoryTbl td:nth-of-type(3):before { content: "Payment Date"; }
+    #paymentHistoryTbl td:nth-of-type(4):before { content: "Payment Amount"; }
+
+
+    #paymentHistoryTbl td, #paymentHistoryTbl th {
+
+        min-height: 25px;
+        text-align: right;
+    }
+
+
+    #header #headerActions li:first-child {
+        padding-left: 0;
+    }
+
+    #contentSH {
+        min-height: 42px;
+        height: auto;
+    }
+
+    #navPriWrap {
+        border-bottom: 0;
+    }
+    #navPriWrap ul {
+        /*display: none;*/
+        height: auto;
+    }
+
+    .bImgWrap {
+        display: none;
+    }
+
+    .toolList .button p, #printBtn p {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    #responsiveMenu {
+        height: auto;
+        vertical-align: middle;
+        display: block;
+        text-align: left;
+        width: 100%;
+
+        background: none repeat scroll 0 0 #4072B6;
+        border-bottom: 2px solid #4690D7;
+    }
+
+    #responsiveMenu img {
+        padding:5px;
+    }
+
+    #navPriWrap {
+        display: none;
+        overflow:hidden;
+    }
+
+
+
+
+    .notifyBar {
+        margin: 0;
+    }
+
+    #cards { padding: 0;}
+
+    .cardRow .card {
+        width: 95%;
+        margin: 2%;
+    }
+
+
+
+    #appCard {
+        width: 95%;
+        margin: 2%;
+        float:none;
+    }
+
+    #notifyCard {
+        width:95%;
+    }
+
+    #sectionH {
+        line-height: 3.0em;
+        text-align: left;
+        float:none;
+    }
+
+    .sToolBar {
+        float: none;
+        margin-right: 5px;
+        padding: 0;
+    }
+
+
+
+    #navPrimary a:active, #navPrimary a:hover, #navPrimary a:focus {
+        color: #2e5777;
+    }
+
+
+    body.pro #header {
+        height: auto;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #sideNav li {
+        font-size: 11px;
+        font-weight: 700;
+        height: auto;
+        padding: 10px 0;
+        vertical-align: top;
+    }
+
+    .sTable thead {
+        background-color: transparent;
+        border-bottom: 0 none;
+        border-top: 0 none;
+        margin: 0;
+        padding: 0;
+    }
+
+    body.signUp #header {
+        height:auto;
+    }
+
+
+    .myProfile .cardBtn, .signUp .cardBtn {
+        display: block;
+        float: none;
+        margin: 10px 0;
+        width: 90%;
+    }
+
+    .signUp .cardBtn {
+        margin: 10px auto;
+    }
+
+    #signupStepInfo li {
+        padding: 5px 15px;
+        border:0 none;
+    }
+
+    .steps h2 {
+        font-size: 18px;
+    }
+
+    #packageSelection .selectPackage {
+
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #codeButton {
+        margin: 5px auto;
+        padding: 10px 15px;
+        width: 98%;
+    }
+
+
+    .steps .card, #suReceipt.card {
+        padding: 5px 10px 5px;
+        width: 95%;
+    }
+
+    .steps .card {
+        padding: 0;
+        width: 100%;
+
+    }
+
+    #completeInfo{
+        width:85%;
+    }
+
+
+    #back {
+        border: 1px solid #CCCCCC;
+        border-radius: 2px;
+        clear: both;
+        display: block;
+        float: none;
+        line-height: 2em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        width: 97%;
+    }
+
+    .signUp #back {
+
+        display: block;
+        margin: 0 auto 10px;
+        text-align: center;
+        width: 98%;
+    }
+
+    #orderConf {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #paymentCodeInput {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+    #ccPmntInfo li {
+        white-space: normal;
+        overflow: auto;
+    }
+
+    #changeAddy {
+        margin:10px auto;
+        width:95%;
+    }
+
+    .steps .cardBtnWrap {
+        text-align: center;
+    }
+
+    #signupStepInfo {
+        background-color: #e6e6e6;
+        width: 100%;
+    }
+
+    .signUp .ifColumn li {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    #paymentInfodiv .ifColumn li {
+        margin-left: 0;
+    }
+
+    #ofwInfo {
+
+        display: block;
+        margin: 20px 0 20px 5px;
+        width: 96%;
+    }
+
+
+    #sideNav {
+        font-size: 12px;
+    }
+
+    #header #headerActions li {
+        padding: 2px 5px;
+    }
+
+    #header #headerActions li:last-child {
+        padding-bottom: 10px;
+    }
+
+    .steps .cardRow {
+        margin-left: 0;
+    }
+
+    .packages .package {
+        margin: 10px 0;
+        background-color: red;
+
+    }
+
+    #packageSelection .packages li{
+        width: 90%;
+    }
+
+    #packageSelection .packages .featuredPackage {
+        width: 94%;
+    }
+
+    #packageSelection .packages .featuredPackage {
+        top: 0;
+        margin: 0 auto;
+        min-height:300px;
+
+    }
+
+    .packages {
+        padding: 0;
+    }
+
+    #mContent.steps {
+        margin: 0;
+    }
+
+    #coEmail span {
+        display:block;
+    }
+
+    .steps .card > h2:first-child {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    #packageSelection .package {
+        min-height: 300px;
+
+    }
+
+    #packageSelection .selectPackage,#packageSelection .featuredPackage .selectPackage  {
+        margin-bottom: 5px;
+    }
+
+    #genpaymentinfodiv {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 95%;
+    }
+
+
+    #disclosurediv {
+        margin: 0 auto;
+        min-width: 300px;
+        width: 95%;
+    }
+
+    .ifColumn select, .ifColumn input {max-width: 150px;}
+
+}
+
+/*iphone classic*/
+
+@media only screen and (max-width : 320px) {
+
+    #addNewClientBtn {
+        margin-left:20px;
+    }
+
+
+    .ifColumn select, .ifColumn input {
+        width: auto;
+        max-width: 220px;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+        width: auto;
+    }
+
+
+    #disclosurediv {
+        max-width: 315px;
+    }
+
+
+    #navPriWrap li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    #headerControl {
+        clear:left;
+    }
+
+    .cardRow .card {
+        min-width: 0px;
+    }
+
+    #main {
+        overflow: hidden;
+    }
+
+    .sTable {
+        margin: 0;
+    }
+
+
+
+    #sideNav a {
+        word-break: break-all;
+        font-size: 12px;
+    }
+
+    #childAdd, #thirdAdd {
+        display: table-cell;
+        float: none;
+        height: 40px;
+        padding-top:10px;
+        width: 45%;
+    }
+
+    #thirdAdd {
+        width: 55%;
+    }
+
+    .sTable td.center {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #lastViewed li {
+        display: block;
+        float: none;
+    }
+
+    #headerActions {
+        padding-bottom: 5px;
+    }
+
+
+    .sTable td {
+        padding:0;
+    }
+
+    .aHrefMobWrap {
+        border: 1px solid #CCCCCC;
+        float: none;
+        padding: 10px 5px;
+        clear: both;
+        text-align: center;
+        -moz-border-radius: 2px; /* Firefox */
+        -webkit-border-radius: 2px; /* Safari, Chrome */
+        border-radius: 2px; /* CSS3 */
+    }
+
+
+    #histSel {
+        margin-top: 1px;
+        width: 100%;
+    }
+
+    label {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .steps .card {
+        border:0 none;
+        box-shadow: none ;
+        -webkit-box-shadow:none ;
+        -moz-box-shadow: none;
+    }
+
+
+    #signupStepInfo li {
+        padding: 5px 14px;
+        border: 0 none;
+    }
+
+    #signupStepInfo {
+        width: 100%;
+    }
+
+    #signupStepInfo li:first-child,#signupStepInfo li:last-child {
+        border-left: 0 none;
+
+    }
+
+    #coEmail span {
+        display:block;
+        padding-left: 2em;
+        text-indent: -2em;
+    }
+
+    #coEmail {margin-bottom:10px;}
+
+    .placeholder {
+        display: none;
+    }
+
+    #coEmail input {
+         margin-left:10px;
+     }
+    #coEmail label {
+        margin-right:10px;
+    }
+
+
+    #mContent.steps {
+        margin: 1px 0 0;
+    }
+
+
+    #ofwInfo {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+
+
+
+
+    #genpaymentinfodiv {
+        padding-left: 0;
+    }
+
+   
+
+    #reCaptchaWrap {
+        position: relative;
+        right: 2%;
+    }
+
+    #createPro {
+        right:2px;
+    }
+
+    #addPaymentInfo, #histBtn {
+        display: block;
+        position:static;
+        margin: 10px auto;
+    }
+
+
+
+    .steps .card, #suReceipt.card {
+        width: 98%;
+    }
+
+    #headerActions {position: absolute;
+        top:0;
+        right:0;
+    }
+
+     #headerActions li {
+         display: block;
+    }
+
+
+
+
+    #packageSelection .packages {
+        width: inherit;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: relative;
+    }
+    
+}
+
+/*Mobile only*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 1080px) {
+     /*Styles*/
+
+    .p535 {max-height: 100%;}
+    .p415 {height: 100%;}
+    .p385 {max-height: 100%;}
+    .p325 {max-height: 100%;}
+    .p200 {max-height: 100%;}
+
+    .bPop {
+        overflow: visible;
+    }
+}
+
+

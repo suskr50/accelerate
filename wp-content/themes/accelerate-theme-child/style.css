@@ -209,7 +209,7 @@ article.case-study {
 
 .case-study-right {
 	float:right;
-	width:706px;
+	width:606px;
 }
 
 .case-study-list img{
@@ -549,6 +549,25 @@ article.case-study {
 	font-weight:600; /* Semi Bold */
  }
 
+.widget_area {
+	background-color:pink;
+	padding:0 0 0 0;
+}
+
+/* Subscribe to Newsletter Signup */
+#mc4wp-form-1 input[type="EMAIL"] {
+	
+	border:1px #45ac9d solid;
+}
 
 
+#mc4wp-form-1 input[type="submit"] {
+	background-color:#45ac9d;
+	border:1px #45ac9d solid;
+	color:white;
+}
+
+#mc4wp-form-1 input[type="submit"]:hover {
+	color:#CCCCCC;
+}
 

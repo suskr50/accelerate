@@ -30,7 +30,7 @@ get_header(); ?>
 					<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 					<h5><?php echo $services; ?></h5>
 					<?php the_excerpt() ?>
-					<a href="<?php $link ?>"><strong>Visit Project ></strong></a>
+					<a href="<?php the_permalink(); ?>"><strong>Visit Project ></strong></a>
 				</div>
 			</aside>
 

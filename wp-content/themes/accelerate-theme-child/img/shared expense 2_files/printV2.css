@@ -1,0 +1,434 @@
+/*
+    Printing Only
+*/
+
+body {
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    background: #ffffff !important;
+    margin: 0;
+
+}
+
+form {
+    width: auto;clear:both;
+}
+
+div {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ol, ul, p, blockquote {
+    page-break-inside: avoid;
+}
+
+li, blockquote p {
+    line-height: 1.25em;
+    margin: 0 0 .5em;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px !important;
+}
+
+h2 {
+    font-size: 21px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+}
+
+h5 {
+    font-size: 14px !important;
+}
+
+h6 {
+    font-size: 12px !important;
+}
+
+.non-printable {
+    display:none  !important;
+}
+
+#mContent {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float:none;
+    overflow: visible;
+}
+
+#mContent.steps {
+    padding: 0;
+}
+
+table {
+    margin: 1px 1px 12px 0;
+    text-align: left;
+}
+
+th {
+    border: 1px solid #333;
+    font-weight: bold;
+    background: none repeat scroll 0 0 transparent;
+}
+
+td {
+    border: 1px solid #999;
+}
+
+th, td {
+    padding: 4px;
+}
+
+tfoot {
+    font-style: italic;
+}
+
+caption {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+thead {
+    display: table-header-group;
+}
+
+tr {
+    page-break-inside: avoid;
+}
+
+#header {
+    border:0 none;
+    margin:0;
+    padding:0;
+}
+
+.expRep {padding:0; }
+
+.expRep h3 {display:none;}
+
+
+
+#printHdr {
+    background: url("/media/Icons/ofwLogoPrint.jpg") no-repeat scroll 100% -3px !important;
+    text-align: right;
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    margin: 0;
+    line-height: 1.2em;
+    width: 265px;
+    clear:right;
+}
+
+#printHdr a {
+    text-decoration: none;
+}
+
+#printListHdr {
+    display: block;
+    clear:left;
+}
+
+#printListHdr p {
+    padding: 5px 0;
+}
+
+
+
+/*#printContent .printListCount label {*/
+    /*font-weight: 400;*/
+    /*line-height: 1em;*/
+    /*width: auto;*/
+/*}*/
+
+#sectionH {
+    color: #000;
+    padding: 0;
+    text-align: left;
+    max-width:280px;
+    line-height: 1.3em;
+    clear: left;
+}
+
+
+.hPop{
+    background-color: #fff;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.hPop h3 { color:#000;width:auto;}
+
+.bPop {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: visible;
+    clear:both;
+
+}
+
+#contentSH {
+    background-color: #fff;
+    border-bottom: 0 none;
+    height: 65px;
+}
+
+#printScrollPane {
+    border: 0 none;
+    border-radius: 0;
+    margin: 0;
+    max-height: 100%;
+    overflow: visible;
+    width:100%;
+
+}
+
+#printListHdr h6 {margin:10px 0; }
+
+
+
+.expenseEle {margin:10px 0;clear: both; padding: 0; width: 100%; page-break-inside: avoid; line-height: 12px;}
+
+.expenseEle label {
+    text-align: left;
+    width: auto;
+}
+
+/*for print information blocks*/
+#lastViewed_print, #currTime_print, #sectionHPrint {display:inline; color:#000;}
+h3#sectionHPrint {float:right;height:24px;width: auto; line-height: 80px;}
+#lastViewed_print *, #currTime_print * {display:inline;margin:0;padding:0;line-height: 1;border: 0 none;}
+#lastViewed_print .lvColor {display:inline-block; width:5px;height:15px;float:none;margin-bottom: -3px;}
+#printInfo {display:block; line-height: 1}
+
+.expCUColor{box-shadow: none;}
+
+.printable {
+ display: block;
+}
+.nonPrintable {
+    display: none;
+}
+
+/*myaccount print styles */
+.myAccount #container{
+    width:100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    max-width:100%;
+}
+
+.myAccount #main {
+    float:none;
+    clear: both;
+}
+
+.myAccount #cards {
+    padding:0;
+}
+
+.myAccount #cards .cardRow .card {
+    display: block;
+    margin: 0 0 10px 0;
+    vertical-align: top;
+    width: 99%;
+}
+
+.myAccount #cards .profileBlock .actionInCard {
+    display: none;
+}
+
+.myAccount #cards .cardHead .edit {
+     display: none;
+ }
+
+.myAccount a, #myAccount a:visited {
+    color: #000;
+}
+
+.myAccount th {
+    background-color: transparent;
+    color: #000;
+    border: 0 none;
+    text-align: left;
+}
+
+.myAccount #histBtn {
+    font-size: 14px;
+}
+
+.myAccount #siHistory {
+    display: none;
+}
+
+.myAccount table tr {
+    background-color: #fff;
+
+}
+
+.tLineBG {
+    padding: 0;
+    border: 0 none;
+}
+
+.userManager .sTable thead th {
+    background-color: transparent;
+    border: 1px solid #999999;
+
+}
+
+.stdCardTbl tr:nth-of-type(2n+1),  .myCases  table tr:nth-of-type(2n+1) {
+    background: none #fff;
+}
+
+.stdCardTbl td, .stdCardTbl th {
+text-align: left;
+    width: auto;
+    background-color: transparent;
+}
+
+.stdCardTbl {
+    width: auto;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+}
+
+.card {
+    page-break-inside: avoid;
+    box-shadow: none;
+}
+
+.steps .card, #suReceipt.card  {
+    border: 0 none;
+    padding: 0;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#suReceipt.card  {
+
+     page-break-inside: auto;
+}
+
+.cardHead {
+    background: 0 none;
+}
+
+#profileInfo h3 {
+    text-align: left;
+}
+
+.notifyBar {
+    color:#000;
+    background-color: transparent;
+    border: 0 none;
+    text-align: left;
+
+}
+
+
+
+.myAccount .cardBtn, .myAccount a.cardBtn {
+    background-color: transparent;
+    border: 0 none;
+    color: #000;
+    width: auto;
+    text-align: left;
+    margin: 0;
+    text-shadow: none;
+    box-shadow: none;
+    background-image: none;
+}
+
+.myAccount #save,#childAdd,#thirdAdd,#proAdd {
+    display: none;
+}
+
+#proArea {
+    background-color: transparent;
+
+}
+
+#proArea .toolList {
+    color: #000000;
+
+}
+
+#suReceipt hr {
+    display:block !important;
+}
+.tranInfo {
+    font-size: 16px;
+}
+
+
+.printListCount label{
+    width:auto;
+    margin-left: 10px;
+}
+
+.printListCount,  .printListCount label, .printListCount span , #printListHdr label, #printListHdr span  {
+    float: none;
+    width: auto;
+    display: inline-block;
+    line-height:16px;
+    vertical-align: baseline;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.printListCount {
+    width:100%;
+}
+
+/*end single address overrides*/
+hr,
+#header,
+.sToolBar,
+#headerControl,
+#navPrimary,
+#sideBar,
+#spacer,
+#navSignout,
+#footer,
+#subToolBar,
+#ofwInfo,
+.hPop .button
+{
+    display: none;
+}
+
+
+
+
+/* EOF */

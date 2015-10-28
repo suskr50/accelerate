@@ -48,3 +48,14 @@ add_action( 'init', 'create_custom_post_types' );
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
 ) );  
+
+
+ register_sidebar( array(
+    'name' =>__( 'Blog sidebar', 'blog-sidebar'),
+    'id' => 'sidebar-1',
+    'description' => __( 'Appears on the blog pages', 'blog-sidebar' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );  
