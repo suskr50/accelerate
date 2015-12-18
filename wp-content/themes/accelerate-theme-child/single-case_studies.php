@@ -26,27 +26,30 @@ get_header(); ?>
 
 			?>
 
-
-		<article class="case-study">	
-			<aside class="case-study-left">
-				<div class="entry-wrap">			
-					<h2><?php the_title(); ?></h2>
-					<h5><?php echo $services; ?></h5>
-					<h6>Client: <?php echo $client; ?></h6>
-					<?php the_content(); ?>
+			<section class="client-info">
+		
+			<aside id="cpost-entry">
+						
+					<h1><?php echo the_title(); ?></h1>
+					<h4><?php echo $services; ?></h4>
+					<h2>Client: <?php echo $client; ?></h2>
+					<p><?php the_content(); ?></p>
 					<a href="<?php $link ?>"><strong>Visit Live Site</strong></a>
-				</div>
+				
 			</aside>
 
-			<section class="case-study-right">
-				<ul class="case-study-list">
+			<section id="cpost-pic">
+			 	<ul id="cpost-list">
 					<?php if ($image1) ?>
 					<li><?php echo wp_get_attachment_image($image1,$size); ?></li>
 					<li><?php echo wp_get_attachment_image($image2,$size); ?></li>
 					<li><?php echo wp_get_attachment_image($image3,$size); ?></li>
 				</ul>
 			</section>
-		</article>
+
+
+		</section>
+
 
 		</div>
 	</div>

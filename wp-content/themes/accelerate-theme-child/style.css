@@ -18,248 +18,14 @@
 	text-align:center;
 }
 
-body {
-	
-}
 
-
-.listitem {
-	background-color:pink;
-}
-
-.listitem2 {
-	background-color:blue;
-}
-
-.listitem3 {
-	background-color:orange;
-}
-
-
-/* Homepage Styles */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    height: 500px;
-    margin: 0 0 80px;
-    padding: 50px 0;
 }
-
-
-.homepage-hero {
-	
-	margin-left: auto;
-   	margin-right: auto;
-   	padding-top:50px;
-   	width:875px;
-   	color:white;
- }
-
- .homepage-hero h1 {
-	
-   	color:white;
-   	font-size: 52px;
-	font-family: 'Montserrat';
-	font-weight:bold;
-
- }
-
-
-.button {
-    background: none repeat scroll 0 0 #45ac9d;
- }
 
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
-    
+	background: none repeat scroll 0 0 #1c7f71;
 }
-
-/* Front Page Recent Post */
-
-.fp-recent-post {
-	background-color:orange;
-	clear: both;
-	width:960px;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top:100px;
-
-}
-
-/* Homepage Blog Style */
-
-.fpblog-post {
-	width:472px;
-	overflow:hidden;
-	float:left;
-
-}
-
-.fp-recent-post p {
-	font-size:17px;
-	font-family: 'open sans', Arial, sans-serif;
-	color: rgb(59, 59, 59); 
-	line-height: 1.727;
-	}
-
-.fp-recent-post h5 {
-	font-size: 27px;
-	font-family: 'Montserrat';
-	color: #a6a6a6;
-	
-	 color: rgb(59, 59, 59);
-	 font-weight:bold;
-
-}
-
-.fp-recent-post h4 {
-	font-size: 17px;
-	font-family: 'Montserrat';
-	color: rgb(166, 166, 166);
-	font-weight:bold;
-}
-
-.moveover {
-	margin-left:46px;
-}
-
-.fp-recent-post h2 {
-	font-size: 24px;
-	font-family: 'Montserrat';
-	font-weight: bold;
-	
-}
-
-.fp-recent-post .read-more-link {
-	font-size: 16px;
-	font-family: 'Montserrat';
-	font-weight: bold;
-	color: #45ac9d;
-	text-transform: uppercase;
-
-}
-
-
-/* Twitter Post */
-
-.twitter-post, .widget-area{
-	width:472px;
-	float:right;
-}
-
-.tweets ul{
-	text-align:left;
-}
-.tweets li {
-	list-style-type:none;
-	font-size:17px;
-	font-family: 'open sans', Arial, sans-serif;
-	color: rgb(59, 59, 59); 
-	line-height: 1.727;
-	font-weight:normal;
-	}
-
-
-}
-
-PI_SimpleTwitterTweets {
-	padding-left:0px;
-}
-
-/* Case Studies Style */
-
-.main-cs-content {
-	width:75%;
-	margin-left:210px;
-}
-
-.main-acs-content {
-	width:75%;
-	margin-left:210px;
-	
-
-}
-
-
-.entry_summary  {
-	margin-left:100px;
-
-}
-.case-study-left {
-	
-	float:left;
-	width:330px;
-	font-size:18px;
-
-}
-
-article.case-study {
-    clear: both;
-    margin: 40px 0 0;
-}
-
-.case-study-left h3 {
-	font-size:16px;
-	font-weight: lighter;
-	color:#606060;
-	padding-bottom:10px;
-
-}
-
-.case-study-left h5 {
-	 color: #999;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.33333;
-    margin: 0 0 12px;
-}
-
-.case-study-left h6 {
-	 font-size: 16px;
-    font-weight: normal;
-    line-height: 1.5;
-    margin: 0 0 50px;
-}
-
-
-.case-study-right {
-	float:right;
-	width:606px;
-}
-
-.case-study-list img{
-	 border: 1px solid #dddddd;
-    margin-bottom: 100px;
-}
-
-.case-study-list{
-	list-style-type:none;
-}
-
-
-
-
-.leftsize h5 {
-
-}
-
-
-
-.leftsize h3 {
-	font-size:16px;
-	font-weight: lighter;
-	color:#606060;
-	padding-bottom:10px;
-
-}
-
-.leftsize{
-	float:left;
-	width:300px;
-	margin-left:150px;
-	font-size:18px;
-	}
-	
-
 
 #masthead nav ul li{
 	float:left;
@@ -270,318 +36,128 @@ article.case-study {
 	margin-top:-25px;
 }
 
-.case-studies-images {
-	float:right;
-	width:50%;
-}
-
-.cs-pictures {
-	padding-top:30px;
-	border-style:solid;
-
+.homepage-hero .button {
+	background-color:#1c7f71;
+	border-radius:3px;
+	text-shadow:1px 1px #000000;
 }
 
 
-/* Featured Work */
 
-.recent-posts {
-	margin-top:100px;
-	
+
+/* Front Page Blog Post */
+
+.blog-post {
+	width: 50%;
 }
 
-.feature-posts {
-	margin-bottom:350px;
-	
-}
-
-.featured-list {
-	list-style-type:none;
-	
-}
-
-.individual-list {
-	float:left;
-	margin: 0px 5px;
-	text-align:center;
-}
-
-.individual-list img {
-
-}
-
-
-/* Contact Page */
-
-
-#content {
+.blog-post h4 {
+	font-size: 16px;
 	font-family: 'Montserrat';
-	color: #606060;
-	margin-left: 75px;
-	width:80%;
-	
+	color: #a6a6a6;
+	text-transform: uppercase;
 }
 
-#content p {
+.blog-post h2 {
+	font-size: 24px;
 	font-family: 'Montserrat';
-	color: #606060;
+	font-weight: bold;
 }
 
-#ninja_forms_form_1_cont {
+.blog-post .read-more-link {
+	font-size: 16px;
 	font-family: 'Montserrat';
-	font-size:14px;
-	color: #606060;
-	}
-
-
-#ninja_forms_field_1_label, #ninja_forms_field_2_label,#ninja_forms_field_3_label,#ninja_forms_field_4_label, #ninja_forms_field_5_label{
-	font-weight: normal;
+	font-weight: bold;
+	color: #1c7f71;
+	text-transform: uppercase;
 }
 
-#ninja_forms_field_1_div_wrap {
-	float:left;
-	width:49%
-}
-#ninja_forms_field_2_div_wrap {
-	float:right;
-	width:49%
-}
+/* Custom Post Page */
 
-#ninja_forms_field_5 {
-	 background: none repeat scroll 0 0 #45ac9d;
-	 float:right;
-	 color:white;
-	 padding:10px 100px 10px 100px;
-}
-
-/* About Styles */
-.about-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    height: 300px;
-}
-
-.about-top {
-	text-align:center;
-	margin-left: auto;
-   	margin-right: auto;
-   	padding-top:50px;
-   	width:600px;
-   	color:white;
-    font-size: 25px;
-	font-family: 'open sans', Arial, sans-serif;
-	font-weight:600; /* Semi Bold */
-}
-
-.about-top strong {
-	color:#45ac9d;
-}
-
-.about-services {
-	text-align:center;
-	padding-bottom: 10px;
-}
-
-.about-service h3{
-	font-weight:bold;
-	font-family:'montserrat';
-	font-size:16.5px;
-}
-
-/* 404 Page */
-.the404-page {
-    height: 300px;
-    margin-top:150px;
-  
-}
-
-
-.404-content {
-	text-align: left;
-	width:850px;
-	height:216px;
-   	margin-left: auto;
-   	margin-right: auto;
-   
-}
-
-.the404-page  h2{
-	color:#45ac9d;
-	
-	font-size:25px;
-}
-
-.the404-content a {
-	text-decoration:underline;
-	color:#45ac9d;
-	font-weight:bold;
-
-}
-
-
-.picsize {
-	height:30px;
-	width:30px;
-}
-
-.404-pic {
-	float: left;
-    margin: 0 40px 80px 0 ;
-   
-}
-
-.the404-content {
-	text-align: left;
-	width:850px;
-	height:216px;
-   	margin-left: auto;
-   	margin-right: auto;
-   
-}
-
-.the404-content img { 
-	width:200px;
-	height:200px;
-}
-
-.about-content {
-	text-align: left;
-	width:850px;
-	height:216px;
-   	margin-left: auto;
-   	margin-right: auto;
-   
-}
-
-.about-content img { 
-	width:200px;
-	height:200px;
-}
-
-.about-content p {
-	 font-size: 17px;
-}
-
-.about-content h2 {
-	 font-size: 40px;
-	 font-family: 'open sans', Arial, sans-serif;
-	 font-weight:600; /* Semi Bold */
-}
-
-
-.picright {
-	float: right;
-    margin: 0 0 80px 40px;
-}
-.picleft {
-	float: left;
-    margin: 0 40px 80px 0 ;
-}
-
-.404-pic {
-	float: left;
-    margin: 0 40px 80px 0 ;
-   
-}
-
-.404-pic img {
-	width:150px;
-}
-
-#call-to-action {
-	clear: both;
-	width:850px;
-	margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-
-  	
-}
-
-#call-to-action p {
-	 font-size: 25px;
-	 font-family: 'open sans', Arial, sans-serif;
-	 font-weight:600; /* Semi Bold */
-	 margin-right:50px;
-}
-
-#call-to-action a {
-	
-	background-color: #45ac9d; 
-	width:400px;
-	padding: 15px 75px 15px 75px;
-	color:white;
-
- }
-
-
- /* Footer */
-
- .site-footer {
-	width:950px;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top:80px;
- }
-
- 
-
- #social ul li{
- 	float:right;
-	margin: 0px 5px;
-	list-style-type:none;
- }
-
- /* Front Page Services Section */
-
- .front-services {
- 	clear: both;
+.client-info {
 	width:960px;
-	margin-left: auto;
-    margin-right: auto;
- }
-
-.front-services ul li{
- 	float:left;
-	margin: 0px 15px;
-	list-style-type:none;
- }
-
- .front-services img {
- 	height:200px;
- 	width:200px;
- }
-
- .front-services h3 {
- 	font-family: 'Montserrat';
-	font-size:18px;
-	font-weight:bold;
- }
-
-  .front-services h4 {
- 	font-size:16.5px;
-	font-weight:bold;
-	font-family: 'open sans', Arial, sans-serif;
-	font-weight:600; /* Semi Bold */
- }
-
-.widget_area {
-	background-color:pink;
-	padding:0 0 0 0;
+	margin:auto;
+	padding-top:50px;
 }
 
-/* Subscribe to Newsletter Signup */
-#mc4wp-form-1 input[type="EMAIL"] {
+#cpost-entry {
+	width:33%;
+	float:left;
+	font-family: 'Montserrat';
+}
+
+#cpost-entry h1 {
+	font-size:24px;
+	color:#3b3b3b;
+}
+
+#cpost-entry h4 {
+	color:#878787;
+	font-size:14px;
+}
+
+#cpost-entry h2 {
+	font-size:15px;
+	color:#2b2b2b;
+}
+#cpost-entry p a {
+	font-size:17px;
+	color:#2b2b2b;
+}
+
+#cpost-entry a {
+	text-decoration:bold;
 	
-	border:1px #45ac9d solid;
+}
+
+#cpost-pic {
+	float:right;
+}
+
+#cpost-pic img {
+	border:2px solid #d9d9d9;
+}
+
+#cpost-pic ul {
+	list-style-type:none;
+}
+
+#cpost-pic li {
+	padding-bottom:50px;
 }
 
 
-#mc4wp-form-1 input[type="submit"] {
-	background-color:#45ac9d;
-	border:1px #45ac9d solid;
-	color:white;
-}
 
-#mc4wp-form-1 input[type="submit"]:hover {
-	color:#CCCCCC;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
