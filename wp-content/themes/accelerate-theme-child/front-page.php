@@ -17,43 +17,44 @@ get_header(); ?>
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
-				<?php the_content(); ?>
-				<a class="button" href="http://localhost:8888/accelerate/case-studies/">View Our Work</a>
-			</div>
-		<?php endwhile; // end of the loop. ?>
-	</div><!-- .container -->
+		<div class='homepage-hero'>
+			<?php the_content(); ?>
+			<a class="button" href="http://localhost:8888/accelerate/case-studies/">View Our Work</a>
+		</div>
+	<?php endwhile; // end of the loop. ?>
+</div><!-- .container -->
 </section><!-- .home-page -->
 
+<!---- Feature Posts ---->
+
+<div class="site-content">
 <section class="feature-posts">
-	<div class="site-content">
+	
 		
-			<h4 class="center"> Featured Work </h4>
-			<?php query_posts('posts_per_page=3&post_type=case_studies')?>
-
-			<ul class="featured-list ">
-
-				<?php while ( have_posts() ) : the_post(); 
-				$image1 = get_field("image1");
-				?>
-				<li class="individual-list">	
-					<figure>
-						<?php echo wp_get_attachment_image($image1,'medium'); ?>
-					</figure>
+		<h4 class="center"> FEATURED WORK </h4>
+		<?php query_posts('posts_per_page=3&post_type=case_studies')?>
 
 
-					<a href="<?php the_permalink(); ?>" class="center "><?php the_title(); ?></a>
-				</li>
-			<?php endwhile; // end of the loop. ?>
 
+		<ul class="our-features">
+			<?php while ( have_posts() ) : the_post(); 
+			$image1 = get_field("image1");
+			?>
 
-			<?php wp_reset_query(); // resets the altered query back to the original ?>
-		</ul>
-	</div>
+			<li> <?php echo wp_get_attachment_image($image1,'medium'); ?> 
+				<a href="<?php the_permalink(); ?>" class="center"><?php the_title(); ?></a>
+			</li>
+
+		<?php endwhile; // end of the loop. ?>
+
+		<?php wp_reset_query(); // resets the altered query back to the original ?>
+	</ul>
+
 </section>
 
 
-<section class="front-services center">
+
+<section class ="front-services ">
 	<?php query_posts('pagename=about'); ?>
 	<?php if (have_posts()) : ?>
 
@@ -68,12 +69,12 @@ get_header(); ?>
 	$title_4 = get_field("title_4");
 	?>
 
-	<h3> Our Services </h3>
-	<ul class="front-service-list">
-		<li> <img src="<?php echo $picture_1; ?>" ><h4><?php echo $title_1; ?></h4> </li>
-		<li> <img src="<?php echo $picture_2; ?>" ><h4><?php echo $title_2; ?></h4> </li>
-		<li> <img src="<?php echo $picture_3; ?>" ><h4><?php echo $title_3; ?></h4> </li>
-		<li> <img src="<?php echo $picture_4; ?>" ><h4><?php echo $title_4; ?></h4> </li>
+	<h4> OUR SERVICES </h4>
+	<ul class="frservices">
+		<li> <img src="<?php echo $picture_1; ?>" ><?php echo $title_1; ?> </li>
+		<li> <img src="<?php echo $picture_2; ?>" ><?php echo $title_2; ?></li>
+		<li> <img src="<?php echo $picture_3; ?>" ><?php echo $title_3; ?></li>
+		<li> <img src="<?php echo $picture_4; ?>" ><?php echo $title_4; ?> </li>
 	</ul>
 
 
@@ -84,26 +85,25 @@ get_header(); ?>
 
 <div style="clear: both;"></div>
 
-<section class="fp-recent-post">
-	<div class="site-content">
 
-		<div class="twitter-post">
-			<div class="moveover">
+
+
+<section class="fp-recent-post">
+	
+
+	<div class="twitter-post">
+
 		<h4>Recent Tweets</h4>
 		<h5>@susan_schrum</h5>
-	</div>
-			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-			<div id="secondary" class="widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-2' ); ?>
-			</div>
-			<?php endif; ?>
 
-
-
-
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
 		</div>
+		<?php endif; ?>
+	</div>
 
-	<div class="fpblog-post">
+	<div class="blog-post">
 		<h4>From the Blog</h4>
 		<?php query_posts('posts_per_page=1'); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -113,7 +113,9 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 	<?php wp_reset_query(); // resets the altered query back to the original ?>
 </div>
+</section>
 
+</div>
 </div>
 </section>
 

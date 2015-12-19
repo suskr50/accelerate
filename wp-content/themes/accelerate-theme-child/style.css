@@ -47,11 +47,18 @@
 
 /* Front Page Blog Post */
 
-.blog-post {
-	width: 50%;
+.fp-recent-post {
+	margin:auto;
+	padding-top:50px;
 }
 
-.blog-post h4 {
+
+.blog-post {
+	width: 45%;
+	float:left;
+}
+
+.blog-post h4, .twitter-post h4 {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
@@ -71,6 +78,14 @@
 	color: #1c7f71;
 	text-transform: uppercase;
 }
+
+/* Twitter Post */
+.twitter-post {
+	width:45%;
+	float:right;
+}
+
+
 
 /* Custom Post Page */
 
@@ -264,11 +279,39 @@
 	height:45px;
 }
 
+.our-features {
+	text-align:center;
+	font-size:17px;
+	font-family: 'Montserrat';
+}
+
+.our-features li {
+	display:inline;
+	float:left;
+	width:300px;
+	padding-right:10px;
+	padding-bottom:50px;
+}
 
 
+/* Front Page Service */
+.front-services {
+	margin:auto;
+	text-align:center;
+	font-size:17px;
+	font-family: 'Montserrat';
 
+}
 
+.front-services h3 {
+	text-align:center;
+}
 
+.frservices li {
+	display:inline;
+	float:left;
+	width:25%;
+}
 
 
 
