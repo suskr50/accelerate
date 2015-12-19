@@ -14,7 +14,8 @@
 
 get_header(); ?>
 
-<section class="about-page">
+
+<section class="ahome-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); 
 		$content_1 = get_field("content_1");
@@ -31,57 +32,77 @@ get_header(); ?>
 		$picture_4 = get_field("picture_4");
 		$title_4 = get_field("title_4");
 		?>
-		<div class="about-top">
-			<?php the_content(); ?>
-		</div>
-	<?php endwhile; // end of the loop. ?>
-</div><!-- .container -->
+			<div class='about-top'>
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile; // end of the loop. ?>
+	</div><!-- .container -->
 </section><!-- .home-page -->
 
+
+
+<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+<section class="about-page">
+	
+
 <section class="about-services">
-	<div class="site-content">
-		<div>
-			<h3 > OUR SERVICES </h3>
-			<p> <?php echo $service ?> </p>
+	<h3 > OUR SERVICES </h3>
+	<p> <?php echo $service ?> </p>
+</section>
+
+<div class="about-content">
+
+	<section class="about-content-left">
+		<img src="<?php echo $picture_1 ?>" >
+		<div class="inside">
+			<h2><?php echo $title_1; ?></h2>
+			<p> <?php echo $content_1; ?> </p>
 		</div>
-	</div>
-</section>
+	</section>
+	<div class="clear">
 
+		<section class="about-content-right">
+			<img class="picright" src="<?php echo $picture_2 ?>" >
+			<div class="inside">
+				<h2><?php echo $title_2; ?></h2>
+				<p> <?php echo $content_2; ?> </p>
+			</div>
+		</section>
+		<div class="clear">
+			<section class="about-content-left">
+				<img class="picleft" src="<?php echo $picture_3 ?>" >
+				<div class="inside">
+					<h2><?php echo $title_3; ?></h2>
+					<p> <?php echo $content_3; ?> </p>
+				</div>
+			</section>
+			<div class="clear">
 
+			</div>
 
-<section class="about-content">
-	<div >
-		<h2><img class="picleft" src="<?php echo $picture_1 ?>" ><?php echo $title_1; ?></h2>
-		<p> <?php echo $content_1; ?> </p>
-	</div>
-</section>
-
-<section class="about-content">
-	<div >
-		<h2><img class="picright" src="<?php echo $picture_2 ?>" ><?php echo $title_2; ?></h2>
-		<p> <?php echo $content_2; ?> </p>
-	</div>
-</section>
-
-<section class="about-content">
-	<div >
-		<h2><img class="picleft" src="<?php echo $picture_3 ?>" ><?php echo $title_3; ?></h2>
-		<p> <?php echo $content_3; ?> </p>
-	</div>
-</section>
-
-
-<section class="about-content">
-	<div >
-		<h2><img class="picright" src="<?php echo $picture_4 ?>" ><?php echo $title_4; ?></h2>
+<section class="about-content-right">
+	<img class="picright" src="<?php echo $picture_4 ?>" >
+	<div class="inside">
+		<h2><?php echo $title_4; ?></h2>
 		<p> <?php echo $content_4; ?> </p>
 	</div>
 </section>
+<div class="clear">
 
 
+<hr>
 <section id="call-to-action">	
-	<p > Interested in working with us? &nbsp&nbsp&nbsp&nbsp&nbsp  <span > <a  href="<?php home_url().'/contact-us'; ?>">Contact Us</a> </p>
+	
+	<h2> Interested in working with us? </h2> 
+	<a href="<?php home_url().'/contact-us'; ?>">Contact Us</a> </p>
+	
 </section>
+<hr>
+
+</div>
+</div>
 
 
 <?php get_footer(); ?>

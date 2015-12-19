@@ -132,9 +132,137 @@
 	clear:both;
 }
 
+/* About Page */
+
+.ahome-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height:300px;
+}
+
+#about-page {
+	width:960px;
+}
+
+#about-page h1 {
+	text-align:center;
+	font-size:25px;
+	color:white;
+}
+
+#about-page h1 {
+	color:#3b3b3b;
+	font-size:25px;
+	color:white;
+
+}
+
+#about-page p{
+	font-size:17px;
+	color:#3b3b3b;
+	text-align:center;
+}
+
+#about-page h3 {
+	font-size:17;
+	text-transform:uppercase;
+	color:#393939;
+	
+}
+
+/* About Service */
+.about-services {
+	text-align:center;
+	padding-bottom:60px;
+}
+
+/* About Top */
+.about-top {
+	margin:auto;
+	width:57%;
+	text-align:center;
+	font-size:25px;
+	color:white;
+	padding-top:50px;
+}
 
 
+.top-color {
+	color:#1c7f71;
+	font-size:25px;
+}
 
+.about-top {
+	height:300px;
+}
+
+/* About Content */
+
+.about-content {
+	margin:0 40px 0 40px;
+}
+
+.about-content-left img {
+	float:left;
+	width:20%;
+	padding-left:10px;
+}
+
+.about-content-right img{
+	float:right;
+	width:20%;
+}
+
+.about-content-left .inside {
+	float:right;
+	width:75%;
+	padding-bottom:60px;
+	
+}
+
+.about-content-right .inside{
+	float:left;
+	width:75%;
+	padding-bottom:60px;
+}
+
+/* About Content */
+#call-to-action {
+	width:75%;
+	margin:auto;
+	padding-bottom:50px;
+}
+
+ hr {
+	
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color:#f9f9f9;
+} 
+
+
+#call-to-action h2{
+	float:left;
+	font-size:25px;
+}
+
+#call-to-action a{
+	float:right;
+	background-color:#1c7f71;
+	border-radius:3px;
+	color:white;
+	font-family: 'Montserrat';
+	font-size:20px;
+	padding-top:10px;
+	text-align:center;
+	text-decoration:bold;
+	width:250px;
+	height:45px;
+}
 
 
 
