@@ -28,7 +28,7 @@ get_header(); ?>
 
 			<section class="client-info">
 		
-			<aside id="cpost-entry">
+			<aside class="cpost-entry">
 						
 					<h1><?php echo the_title(); ?></h1>
 					<h4><?php echo $services; ?></h4>
@@ -38,8 +38,8 @@ get_header(); ?>
 				
 			</aside>
 
-			<section id="cpost-pic">
-			 	<ul id="cpost-list">
+			<section class="cpost-pic">
+			 	<ul class="cpost-list">
 					<?php if ($image1) ?>
 					<li><?php echo wp_get_attachment_image($image1,$size); ?></li>
 					<li><?php echo wp_get_attachment_image($image2,$size); ?></li>

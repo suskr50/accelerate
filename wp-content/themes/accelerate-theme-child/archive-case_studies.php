@@ -13,9 +13,9 @@
 
 get_header(); ?>
 
-	<section class="feature-work">
-	<div class="container ">
-		<div class="main-acs-content  ">
+<section class="feature-work">
+	<div class="container wrap">
+		<div class="main-cs-content  ">
 
 			<?php while ( have_posts() ) : the_post(); 
 			$services = get_field('services');
@@ -24,35 +24,30 @@ get_header(); ?>
 			$size = "full";
 			?>
 
-<article class="case-study">	
-			<aside class="case-study-left">
-				<div class="entry-wrap">			
-					<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-					<h5><?php echo $services; ?></h5>
-					<?php the_excerpt() ?>
+			<section class="client-info">
+				<aside class="cpost-entry">			
+					<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+					<h4><?php echo $services; ?></h4>
+					<p><?php the_excerpt() ?></p>
 					<a href="<?php the_permalink(); ?>"><strong>Visit Project ></strong></a>
-				</div>
-			</aside>
+					
+				</aside>
 
-			<section class="case-study-right">
-				<ul class="case-study-list">
-					<li> <?php if ($image1)  { 
-						echo wp_get_attachment_image($image1,$size);
-					} ?></li>
+				<section class="cpost-pic">
+					<ul class="cpost-list">
+						<li> <?php if ($image1)  { 
+							echo wp_get_attachment_image($image1,$size);
+						} ?></li>
 					</ul>
+				</section>
 			</section>
-		</article>
+			<div class="clear"></div>
+
+		<?php endwhile; // end of the loop. ?>
+
+	</div><!-- #content -->
+</div><!-- #primary -->
+<section>
 
 
-
-
-
-
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<section>
-
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
