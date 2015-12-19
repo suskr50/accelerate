@@ -29,12 +29,9 @@ get_header(); ?>
 
 <div class="site-content">
 <section class="feature-posts">
-	
 		
 		<h4 class="center"> FEATURED WORK </h4>
 		<?php query_posts('posts_per_page=3&post_type=case_studies')?>
-
-
 
 		<ul class="our-features">
 			<?php while ( have_posts() ) : the_post(); 
@@ -52,9 +49,9 @@ get_header(); ?>
 
 </section>
 
+<div style="clear: both;"></div>
 
-
-<section class ="front-services ">
+<section class ="front-services">
 	<?php query_posts('pagename=about'); ?>
 	<?php if (have_posts()) : ?>
 
